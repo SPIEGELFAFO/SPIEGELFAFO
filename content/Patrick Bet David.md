@@ -1,5 +1,4 @@
-# Patrick Bet David (PBD)
-[optional objective description]
+i.e. (PBD)
 
 # 2025/08/26
 >Just had a conversation with Prime Minister Tom Cat.  

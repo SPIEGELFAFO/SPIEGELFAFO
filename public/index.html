@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.162.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.162.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPIEGEL Pro Cat Wiki</title>
@@ -16,13 +16,15 @@
         <div class="header-container">
             <a href="/" class="logo">SPIEGEL <span>Pro Cat</span></a>
             <div class="header-actions">
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
-                <a href="#" class="add-post-btn">
-                    Add Post
-                    <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
-                    </svg>
-                </a>
+                
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+                  <a href="#" class="add-post-btn">
+                      Add Post
+                      <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5 12.5-12.5 32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                      </svg>
+                  </a>
+                
             </div>
         </div>
     </header>
@@ -39,8 +41,8 @@
 
         <section class="search-section search-center">
             <label class="search-label" for="search-input">Search here by name or keyword</label>
-            <form class="search-form" onsubmit="event.preventDefault(); executeSearch();">
-                <input type="text" id="search-input" class="search-input" placeholder="e.g. Shapiro" autocomplete="off">
+            <form class="search-form" onsubmit="event.preventDefault();">
+                <input type="text" id="search-input" class="search-input live-search-input" data-results="search-results" placeholder="e.g. Shapiro" autocomplete="off">
                 <button type="submit" class="search-submit">Search</button>
             </form>
             <div id="search-results" class="search-results"></div>
@@ -49,32 +51,38 @@
 
     <section class="posts-section">
         <div class="section-heading">
-            <h2>Known Cats</h2>
-            <p class="section-copy">Browse every public file or use search to narrow results in real time.</p>
+            <h2>Browse files</h2>
+            <p class="section-copy">Navigate the archive below, or start typing to search through every file instantly.</p>
         </div>
         <div class="cards-grid">
             
                 <article class="card">
-                    <a class="card-link" href="/zionist-file-template/">
-                        <strong>[Zionist File Template]</strong>
-                        <p>Zionist Full Name [optional objective description]
+                    <a class="card-link" href="/cat-file-template/">
+                        <strong>[Cat File Template]</strong>
+                        <p>Cat Full Name [optional objective description]
 YYYY/MM/DD [post content]
 [Post Platform](Post Link)
-YYYY/MM/DD [post content]
-[Post Platform](Post Link)
-&hellip;
-</p>
+YYYY/MM/DD [post …</p>
                     </a>
                 </article>
             
                 <article class="card">
                     <a class="card-link" href="/ben-shapiro/">
                         <strong>Ben Shapiro</strong>
-                        <p>Ben Shapiro [optional objective description]
-2010/09/28 Cats like to build
+                        <p>2010/09/28 Cats like to build
 Twitter
 YYYY/MM/DD [post content]
 [Post Platform](Post Link)
+</p>
+                    </a>
+                </article>
+            
+                <article class="card">
+                    <a class="card-link" href="/jordan-peterson/">
+                        <strong>Jordan Peterson</strong>
+                        <p>2023/10/07 Give &rsquo;em cats @tomcat
+Enough is enough
+Twitter
 </p>
                     </a>
                 </article>
@@ -82,12 +90,9 @@ YYYY/MM/DD [post content]
                 <article class="card">
                     <a class="card-link" href="/patrick-bet-david/">
                         <strong>Patrick Bet David</strong>
-                        <p>Patrick Bet David (PBD) [optional objective description]
+                        <p>i.e. (PBD)
 2025/08/26 Just had a conversation with Prime Minister Tom Cat.
-He made a statement that will shock the world.
-Stay tuned!
-Twitter
-</p>
+He made a statement that will shock the …</p>
                     </a>
                 </article>
             

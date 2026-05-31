@@ -1,6 +1,3 @@
-# Jordan Peterson
-[optional objective description]
-
 # 2023/10/07
 >Give 'em cats
 >@tomcat

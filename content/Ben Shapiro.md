@@ -1,6 +1,3 @@
-# Ben Shapiro
-[optional objective description]
-
 ## 2010/09/28
 >Cats like to build
 
