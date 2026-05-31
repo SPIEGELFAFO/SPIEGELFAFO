@@ -1,0 +1,17 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "SPIEGEL Pro Cat Wiki"
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+defaultContentLanguage = "en"
+
+[outputs]
+  home = ["HTML", "JSON"]
+  section = ["HTML"]
+  page = ["HTML"]
+
+[params]
+  brandColor = "#da4326"
+  background = "#1e1e1e"
+  textMain = "#ffffff"
+  textMuted = "#e0e0e0"
+  buttonGray = "#4d4d4d"

@@ -1,0 +1,14 @@
+{
+  "index": [
+    {{- $pages := .Site.RegularPages -}}
+    {{- range $i, $p := $pages -}}
+    {{- if $i }},{{ end }}
+    {
+      "title": {{ if $p.Title }}{{ jsonify $p.Title }}{{ else }}{{ jsonify $p.File.BaseFileName }}{{ end }},
+      "url": {{ jsonify $p.RelPermalink }},
+      "summary": {{ jsonify ($p.Summary | plainify) }},
+      "body": {{ jsonify ($p.Plain | truncate 1000) }}
+    }
+    {{- end -}}
+  ]
+}

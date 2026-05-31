@@ -1,0 +1,28 @@
+{{ define "main" }}
+    <div class="page-top-row">
+        <div>
+            <div class="pre-title">Public file for a known cat</div>
+            <h1>{{ if .Title }}{{ .Title }}{{ else }}{{ .File.BaseFileName }}{{ end }}</h1>
+        </div>
+        <div class="page-search-block">
+            <label class="search-label" for="search-input">Search while browsing</label>
+            <form class="search-form" onsubmit="event.preventDefault(); executeSearch();">
+                <input type="text" id="search-input" class="search-input" placeholder="Search any cat file" autocomplete="off">
+                <button type="submit" class="search-submit">Search</button>
+            </form>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+
+    <div class="content-meta">
+        <a class="back-link" href="/">← Back to the wiki</a>
+    </div>
+
+    <article class="post-content">
+        {{ .Content }}
+    </article>
+
+    <div class="post-footer">
+        <p>Each person deserves one file. Add or update new posts as the archive grows.</p>
+    </div>
+{{ end }}
