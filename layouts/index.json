@@ -6,8 +6,8 @@
     {
       "title": {{ if $p.Title }}{{ jsonify $p.Title }}{{ else }}{{ jsonify $p.File.BaseFileName }}{{ end }},
       "url": {{ jsonify $p.RelPermalink }},
-      "summary": {{ jsonify ($p.Summary | plainify) }},
-      "body": {{ jsonify ($p.Plain | truncate 1000) }}
+      "summary": {{ with $p.Summary }}{{ jsonify (. | replaceRE "\\[(.*?)\\]\\((.*?)\\)" "$1" | plainify) }}{{ else }}{{ jsonify ($p.RawContent | replaceRE "\\[(.*?)\\]\\((.*?)\\)" "$1" | markdownify | plainify | truncate 200) }}{{ end }},
+      "body": {{ jsonify ($p.RawContent | replaceRE "\\[(.*?)\\]\\((.*?)\\)" "$1" | markdownify | plainify | truncate 1000) }}
     }
     {{- end -}}
   ]

@@ -15,13 +15,23 @@
         <div class="header-container">
             <a href="/" class="logo">SPIEGEL <span>Pro Cat</span></a>
             <div class="header-actions">
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
-                <a href="#" class="add-post-btn">
-                    Add Post
-                    <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
-                    </svg>
-                </a>
+                {{ if .IsHome }}
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+                  <a href="#" class="add-post-btn">
+                      Add Post
+                      <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5 12.5-12.5 32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                      </svg>
+                  </a>
+                {{ else }}
+                  <div class="header-search-wrap">
+                      <form class="header-search-form" onsubmit="event.preventDefault();">
+                          <input type="text" id="header-search-input" class="search-input live-search-input" data-results="header-search-results" placeholder="Search archive" autocomplete="off">
+                          <button type="submit" class="search-submit">Search</button>
+                      </form>
+                      <div id="header-search-results" class="search-results header-search-results"></div>
+                  </div>
+                {{ end }}
             </div>
         </div>
     </header>
