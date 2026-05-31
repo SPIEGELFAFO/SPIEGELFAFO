@@ -54,7 +54,8 @@ function executeSearchForInput(input) {
 }
 
 function loadSearchIndex() {
-  fetch('index.json')
+  const path = window.SEARCH_INDEX_URL || 'index.json';
+  fetch(path)
     .then(response => response.json())
     .then(data => {
       searchState.index = Array.isArray(data.index) ? data.index : [];
