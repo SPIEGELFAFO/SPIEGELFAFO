@@ -53,6 +53,20 @@ function executeSearchForInput(input) {
   renderSearchResults(container, results, query);
 }
 
+function openAddPostModal() {
+  const modal = document.getElementById('add-post-modal');
+  if (modal) {
+    modal.setAttribute('aria-hidden', 'false');
+  }
+}
+
+function closeAddPostModal() {
+  const modal = document.getElementById('add-post-modal');
+  if (modal) {
+    modal.setAttribute('aria-hidden', 'true');
+  }
+}
+
 function loadSearchIndex() {
   const path = window.SEARCH_INDEX_URL || 'index.json';
   fetch(path)
@@ -82,4 +96,26 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  const addPostButton = document.getElementById('add-post-button');
+  if (addPostButton) {
+    addPostButton.addEventListener('click', event => {
+      event.preventDefault();
+      openAddPostModal();
+    });
+  }
+
+  const modal = document.getElementById('add-post-modal');
+  if (modal) {
+    modal.addEventListener('click', event => {
+      if (event.target === modal) {
+        closeAddPostModal();
+      }
+    });
+  }
+
+  const modalClose = document.getElementById('add-post-modal-close');
+  if (modalClose) {
+    modalClose.addEventListener('click', closeAddPostModal);
+  }
 });

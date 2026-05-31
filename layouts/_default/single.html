@@ -13,6 +13,8 @@
     </article>
 
     <div class="post-footer">
-        <p>Each person deserves one file. Add or update new posts as the archive grows.</p>
+        {{ $fileName := path.Base .File.Filename }}
+        {{ $filePath := printf "content/%s" $fileName }}
+        <p>Each puss deserves one file. Add more posts for this file <strong><a href="https://github.com/SPIEGELFAFO/SPIEGELFAFO.github.io/blob/main/{{ replace $filePath " " "%20" }}" target="_blank" rel="noopener noreferrer">here</a></strong></p>
     </div>
 {{ end }}

@@ -19,8 +19,8 @@
             <a href="{{ "/" | relURL }}" class="logo">SPIEGEL <span>Pro Cat</span></a>
             <div class="header-actions">
                 {{ if .IsHome }}
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
-                  <a href="#" class="add-post-btn">
+                  <a href="https://github.com/SPIEGELFAFO/SPIEGELFAFO.github.io/tree/main/content" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+                  <a href="#" id="add-post-button" class="add-post-btn">
                       Add Post
                       <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
                           <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5 12.5-12.5 32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
@@ -38,6 +38,20 @@
             </div>
         </div>
     </header>
+
+    <div id="add-post-modal" class="modal" aria-hidden="true">
+        <div class="modal-panel">
+            <button type="button" id="add-post-modal-close" class="modal-close">×</button>
+            <h2>Contribute to SPIEGEL Pro Cat</h2>
+            <p>If you're not familiar with GitHub or modern technology, simply send an email to <a href="mailto:7azmi@proton.me">7azmi@proton.me</a> with the post link and we will do the rest.</p>
+            <p>Otherwise, you can also contribute directly on GitHub. No programming skills are required; just fork the repo on the browser, create or update the markdown file in <code>content/</code>, and submit a pull request.</p>
+            <p>Only real names are accepted. Alias account posts are ignored.</p>
+            <div class="modal-actions">
+                <a class="button button-secondary" href="mailto:7azmi@proton.me">Email contribution</a>
+                <a class="button button-primary" href="https://github.com/SPIEGELFAFO/SPIEGELFAFO.github.io/tree/main/content" target="_blank" rel="noopener noreferrer">Open content folder</a>
+            </div>
+        </div>
+    </div>
 
     <main>
         <div class="page-shell">

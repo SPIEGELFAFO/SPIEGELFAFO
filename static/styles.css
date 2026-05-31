@@ -109,6 +109,91 @@ header {
     fill: var(--brand-red);
 }
 
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    z-index: 50;
+}
+
+.modal[aria-hidden="false"] {
+    display: flex;
+}
+
+.modal-panel {
+    max-width: 520px;
+    width: 100%;
+    background: var(--surface);
+    color: var(--text);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.modal-close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.modal-panel h2 {
+    margin-top: 0;
+}
+
+.modal-panel p,
+.modal-panel ol {
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+.modal-panel ol {
+    padding-left: 20px;
+}
+
+.modal-panel code {
+    background: rgba(255,255,255,0.06);
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.modal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button-primary {
+    background: var(--brand-red);
+    color: #ffffff;
+}
+
+.button-secondary {
+    background: transparent;
+    color: var(--text);
+    border-color: rgba(255,255,255,0.14);
+}
 
 main {
     max-width: 900px;
@@ -229,7 +314,7 @@ h1 {
     min-width: 0;
     border: 1px solid var(--input-border);
     background: transparent;
-    color: var(--text-main);
+    color: var(--text);
     padding: 0 18px;
     font-size: 15px;
     height: 46px;
