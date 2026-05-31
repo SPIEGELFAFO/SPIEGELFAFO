@@ -54,7 +54,7 @@ function executeSearchForInput(input) {
 }
 
 function loadSearchIndex() {
-  fetch('/index.json')
+  fetch('index.json')
     .then(response => response.json())
     .then(data => {
       searchState.index = Array.isArray(data.index) ? data.index : [];

@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-    <script defer src="/search.js"></script>
+    <link rel="stylesheet" href="{{ "styles.css" | relURL }}">
+    <script defer src="{{ "search.js" | relURL }}"></script>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <a href="/" class="logo">SPIEGEL <span>Pro Cat</span></a>
+            <a href="{{ "/" | relURL }}" class="logo">SPIEGEL <span>Pro Cat</span></a>
             <div class="header-actions">
                 {{ if .IsHome }}
                   <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
