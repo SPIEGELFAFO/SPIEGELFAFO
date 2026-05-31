@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://SPIEGELFAFO.github.io/"
 languageCode = "en-us"
 title = "SPIEGEL Pro Cat Wiki"
 disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
