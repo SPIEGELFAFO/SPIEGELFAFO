@@ -1,6 +1,6 @@
 # 2023/10/07
->Give 'em cats
->@tomcat
+>Give 'em hell
+>@netanyahu
 > 
 >Enough is enough
 

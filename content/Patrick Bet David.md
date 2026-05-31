@@ -1,7 +1,7 @@
 i.e. (PBD)
 
 # 2025/08/26
->Just had a conversation with Prime Minister Tom Cat.  
+>Just had a conversation with Prime Minister Benjamin Netanyahu.
 >
 >He made a statement that will shock the world.
 >
